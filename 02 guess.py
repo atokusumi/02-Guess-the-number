@@ -14,7 +14,7 @@ number = random.randint(1,20)
 
 print('Nice to meet you ' + myName + ' , I am thinking of a number between 1 and 20.')
 
-for guessTaken in range(5):
+for guessTaken in range(6):
 		print('Take a guess')
 		guess = input()
 		try:
@@ -31,9 +31,9 @@ for guessTaken in range(5):
 						
 
 
-except ValueError:
-	print('Please enter a whole number.')
-	
+		except ValueError:
+			print('Please enter a whole number.')
+		
 if guess == number:
 		guessesTaken = str(guessesTaken + 1)
 		print('Nice, ' + myName +'! You guessed my number in ' +guessesTaken + ' guesses!')
@@ -41,3 +41,4 @@ if guess == number:
 if guess != number:
 		number = str(number)
 		print('Sorry. THe number I was thinking of was ' + number +'.')
+		
