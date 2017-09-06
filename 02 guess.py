@@ -30,9 +30,9 @@ for chances in range(10):
 		except ValueError:
 			print('Please enter a whole number.')
 		
-		if chances[10]:
-				number = str(number)
-				print('Nope! Sorry!! The number I was thinking was + number +!')
+if range[10] and guess != number:
+		number = str(number)
+		print('Nope! Sorry!! The number I was thinking was' + number )
 			
 
 		
