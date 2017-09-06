@@ -18,10 +18,10 @@ for chances in range(10):
 				guess = int(guess)
 				
 				if guess > number:
-					print('Guessed too high!)
+					print('Guessed too high!')
 					
 				elif guess < number:
-					print('Guessed too low!)
+					print('Guessed too low!')
 					
 				elif guess == number:
 						print('Yay! You guessed it right!')
@@ -32,7 +32,7 @@ for chances in range(10):
 		
 		if chances[10]:
 			number = str(number)
-			print('Nope! Sorry!! The number I was thinking was + number +!)
+			print('Nope! Sorry!! The number I was thinking was + number +!')
 			
 
 		
