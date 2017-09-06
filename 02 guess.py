@@ -18,10 +18,10 @@ for chances in range(10):
 				guess = int(guess)
 				
 				if guess > number:
-					print('Guessed too high!')
+					print('Guessed too high! You have + 9-chances + to try!')
 					
 				elif guess < number:
-					print('Guessed too low!')
+					print('Guessed too low! You have + 9-chances + to try!')
 					
 				elif guess == number:
 						print('Yay! You guessed it right!')
@@ -30,11 +30,7 @@ for chances in range(10):
 		except ValueError:
 			print('Please enter a whole number.')
 		
-if guess == number:
-		chances = str(chances+1)
-		print('Nice, ' + myName +'! You guessed my number in ' + chances+1 + ' guesses!')
-		
 if guess != number:
 		number = str(number)
-		print('Sorry. THe number I was thinking of was ' + number +'.')
+		print('Sorry. The number I was thinking of was ' + number +'.')
 		
