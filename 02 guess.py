@@ -11,7 +11,6 @@ myName = input()
 
 #generate a random integer between 1 and 20 (inclusive) and store it in the variable [number]
 number = random.randint(1,20)
-
 print('Nice to meet you ' + myName + ' , I am thinking of a number between 1 and 20.')
 
 for guessTaken in range(6):
@@ -21,22 +20,20 @@ for guessTaken in range(6):
 				guess = int(guess)
 				
 				if guess > number:
-					print('Guess is too high!')
+					print('Guessed too high!')
 					
 				if guess < number:
-					print('Guess is too low!')
+					print('Guessed too low!')
 					
 				if guess == number:
 						break
-						
-
 
 		except ValueError:
 			print('Please enter a whole number.')
 		
 if guess == number:
 		guessesTaken = str(guessesTaken + 1)
-		print('Nice, ' + myName +'! You guessed my number in ' +guessesTaken + ' guesses!')
+		print('Nice, ' + myName +'! You guessed my number in ' + guessesTaken + ' guesses!')
 		
 if guess != number:
 		number = str(number)
