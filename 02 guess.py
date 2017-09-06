@@ -22,19 +22,24 @@ for chances in range(5):
 				if guess > number:
 					print('Guessed too high!')
 					
-				elif guess < number:
+				if guess < number:
 					print('Guessed too low!')
 					
-				elif guess == number:
-						print('Yay! You guessed it right!')
+				if guess == number:
 						break
 			
-		if guess != number:
-				number = str(number)
-				print('Nope! The number I was thinking was:' + number)
-				
 		except ValueError:
 			print('Please enter a whole number.')
+			
+if guess == number:
+		chances = str(chances)
+	    print('Good job, ' + myName + '! You guessed my number in ' + chances + ' guesses!')
+
+if guess != number:
+		number = str(number)
+		print('Nope. The number I was thinking of was' + number)
+		
+
 			
 
 		
