@@ -31,8 +31,8 @@ for chances in range(10):
 			print('Please enter a whole number.')
 		
 		if chances[10]:
-			number = str(number)
-			print('Nope! Sorry!! The number I was thinking was + number +!')
+				number = str(number)
+				print('Nope! Sorry!! The number I was thinking was + number +!')
 			
 
 		
