@@ -29,9 +29,10 @@ for chances in range(5):
 						print('Yay! You guessed it right!')
 						break
 			
-				elif guess != number:
-						number = str(number)
-						print('Nope! The number I was thinking was:' + number)
+		if guess != number:
+				number = str(number)
+				print('Nope! The number I was thinking was:' + number)
+				
 		except ValueError:
 			print('Please enter a whole number.')
 			
