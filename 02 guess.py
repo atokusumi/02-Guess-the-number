@@ -24,7 +24,7 @@ for chances in range(10):
 					print('Guessed too low!')
 					
 				elif guess == number:
-					print('Yay! You guessed it right!')
+						print('Yay! You guessed it right!')
 						break
 
 		except ValueError:
