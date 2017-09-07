@@ -28,9 +28,9 @@ for chances in range(maxChances):
 						break
 						print('That is correct!')
 				
-				if chances = 5:
-						int(x) = number*12
-						print('hint: number * 12 =' + x + '.')
+		if chances = 4:
+				int(x) = number*12
+				print('hint: number * 12 =' + x + '.')
 			
 		except ValueError:
 			print('Please enter a whole number.')
