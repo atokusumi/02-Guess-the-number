@@ -7,7 +7,7 @@ assert sys.version_info >= (3,4), "This script requires at least Python 3.4"
 chances = 0
 maxChances = 3
 
-myName = input('Konnichiwa! What is your name?')
+myName = input('こんにちわ! What is your name?')
 
 #generate a random integer between 1 and 20 (inclusive) and store it in the variable [number]
 number = random.randint(1,20)
