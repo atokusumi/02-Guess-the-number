@@ -13,7 +13,7 @@ myName = input('Konnichiwa! What is your name?')
 number = random.randint(1,20)
 print('Nice to meet you ' + myName + ' , I am thinking of a number between 1 and 20.')
 
-for chance in range(maxChances):
+for chances in range(maxChances):
 		guess = input('take a guess:')
 		try:
 				guess = int(guess)
@@ -33,7 +33,7 @@ for chance in range(maxChances):
 			
 if guess == number:
 		chances = str(chances + 1)
-		print('Yay! You guessed teh number in ' + chances + ' guesses!')	
+		print('Yay! You guessed the number in ' + chances + ' guesses!')	
 
 if guess != number:
 		number = str(number)
