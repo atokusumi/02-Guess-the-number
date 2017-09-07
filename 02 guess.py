@@ -12,21 +12,20 @@ myName = input('Konnichiwa! What is your name?')
 number = random.randint(1,20)
 print('Nice to meet you ' + myName + ' , I am thinking of a number between 1 and 20.')
 
-for chances in range(5):
+while chances < 5:
 		guess = input('take a guess:')
-		try:
-				guess = int(guess)
+		guess = int(guess)		
+		
+		chances = chances + 1
 				
-				chances = chances + 1
-				
-				if guess > number:
-					print('Guessed too high!')
+		if guess > number:
+				print('Guessed too high!')
 					
-				if guess < number:
-					print('Guessed too low!')
+		if guess < number:
+				print('Guessed too low!')
 					
-				if guess == number:
-						break
+		if guess == number:
+				break
 			
 		except ValueError:
 			print('Please enter a whole number.')
