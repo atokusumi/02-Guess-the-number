@@ -5,7 +5,7 @@ import random
 assert sys.version_info >= (3,4), "This script requires at least Python 3.4"
 
 chances = 0
-maxChances = 5
+maxChances = 3
 
 myName = input('Konnichiwa! What is your name?')
 
@@ -19,18 +19,16 @@ for chances in range(maxChances):
 				guess = int(guess)
 				
 				if guess < number:
-						print('Guessed too low')
+						print('Guessed too low!')
 				
 				if guess > number:
-						print('Guessed too high!')
+						hint = str(number * 5)
+						print('Guessed too high! Hint:number * 10 / 2 is ' + hint + '.')
 						
 				if guess == number:
 						break
 						print('That is correct!')
 				
-				if chances = 5:
-						int(x) = number*12
-						print('hint: number * 12 =' + x + '.')
 			
 		except ValueError:
 			print('Please enter a whole number.')
